@@ -1,126 +1,125 @@
-html{font-size: 100%;
+html {
+    font-size: 100%;
     overflow-x: hidden;
 
 }
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
 }
-.container{
+.container {
     width: 1100px;
-    
-    margin: 0px auto;
-    
+
+    margin: 0 auto;
+
 }
-.jumbotron{
-margin-top: 0px;
-padding: 17px;
-color: white;
-text-shadow: 3px 0px rgb(30, 1, 58), 2px 1px rgb(30, 1, 58);
-background-image: url(https://cdn.shopify.com/s/files/1/0400/8784/6957/articles/Requerimientos_climaticos_de_las_berries_800x.jpg?v=1601935728);
-width: 100vw;
-height: 100vh;
+.jumbotron {
+    margin-top: 0;
+    padding: 17px;
+    color: white;
+    text-shadow: 3px 0 rgb(30, 1, 58), 2px 1px rgb(30, 1, 58);
+    background-image: url("https://cdn.shopify.com/s/files/1/0400/8784/6957/articles/Requerimientos_climaticos_de_las_berries_800x.jpg?v=1601935728");
+    width: 100vw;
+    height: 100vh;
 }
-.banner{
-    background-image: url(https://www.berry.net/mex/wp-content/uploads/sites/2/2013/02/company.jpg);
+.banner {
+    background-image: url("https://www.berry.net/mex/wp-content/uploads/sites/2/2013/02/company.jpg");
     width: 50%;
     height: 83%;
     float: right;
-    margin-top: 0px;
-
+    margin-top: 0;
 
 }
-.contenedor{
+.contenedor {
     width: 100%;
     display: flex;
     max-width: 1100px;
 
 }
-.contenedor .productos .row{
-    
+.contenedor .productos .row {
+
     margin: auto;
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     grid-gap: 50px;
-    padding: 45px 0px;
+    padding: 45px 0;
 }
 
-.card{
+.card {
     width: 15%;
     height: 25%;
     border-radius: 6px;
     background-color: white;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.24) ;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.24);
     overflow: hidden;
     margin: 20px;
     cursor: default;
     transition: all 400ms ease;
-    
+
 }
-.card:hover{
+.card:hover {
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
 }
-.card img{
+.card img {
     width: 300%;
     height: 200%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
-    padding: 45px 0px;
-    
-    
+    padding: 45px 0;
+
 }
 
-a{
+a {
     text-decoration: none;
     color: rgb(3, 1, 29);
 }
-header{
-    display: flex ;
+header {
+    display: flex;
     min-height: 70px;
     background-color: #ee1321;
     justify-content: space-between;
     align-items: center;
     padding: 15px;
 }
-.nombre.empresa{
-    text-shadow: 3px 0px rgb(95, 42, 145), 2px 1px rgb(95, 42, 145);
+.nombre.empresa {
+    text-shadow: 3px 0 rgb(95, 42, 145), 2px 1px rgb(95, 42, 145);
 
 }
 
-.logo{
+.logo {
     display: flex;
     align-items: center;
 }
-.logo img{
+.logo img {
     height: 90px;
     margin-right: 15px;
 }
 
-nav a{
+nav a {
     font-weight: 600;
     padding-right: 10px;
 }
 
-nav a:hover{
+nav a:hover {
     color: white;
 
 }
-.footer{
+.footer {
     width: 100%;
     background-color: #ee1321;
 }
-.footer .grupo-1{
+.footer .grupo-1 {
     width: 100%;
     max-width: 1200px;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
-    padding: 45px 0px;
+    padding: 45px 0;
 
 }
-.footer .grupo-1 .box figure{
+.footer .grupo-1 .box figure {
     width: 150px;
     display: inline-block;
     text-decoration: none;
@@ -132,12 +131,12 @@ nav a:hover{
     background-color: black;
 }
 @media (max-width:700px) {
-    header{
+    header {
         flex-direction: column;
     }
 
 }
 
-nav{
-    padding: 10px 0px;
+nav {
+    padding: 10px 0;
 }
