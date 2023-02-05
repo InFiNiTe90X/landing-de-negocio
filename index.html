@@ -17,39 +17,26 @@
             src="http://code.jquery.com/jquery-3.2.1.slim.min.js"
             integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
             crossorigin="anonymous"></script>
-        <script type="text/javascript">
-            $(document).ready(function () {
-                $('#menu_on').click(function () {
-                    $('body').toggleClass('visible_menu');
-                })
-            });
-        </script>
+        <!-- <script type="text/javascript"> $(document).ready(function () {
+        $('#menu_on').click(function () { $('body').toggleClass('visible_menu'); }) });
+        </script> -->
     </head>
     <body>
         <header>
             <div class="wave w1"></div>
-            <a href="#" id="menu_on">
-                <span></span>
-                <span></span>
-                <span></span>
-            </a>
-            <img class="logo" src="./assets/img/logo.png" alt="logo de la empresa DIPRO">
             <nav>
                 <ul>
                     <li>
                         <a href="#inicio">Inicio</a>
                     </li>
                     <li>
-                        <a href="#aboutus">Sobre nosotros</a>
-                    </li>
-                    <li>
-                        <a href="#promos">Promociones</a>
+                        <a href="#about-us-startline">Sobre nosotros</a>
                     </li>
                     <li>
                         <a href="#maps">Visítanos</a>
                     </li>
                     <li>
-                        <a href="#cotiza">Cotizaciones y citas</a>
+                        <a href="#bsw2">Contacto</a>
                     </li>
                 </ul>
             </nav>
@@ -59,29 +46,23 @@
                 <div class="jumbotron">
                     <h1>¿Problemas con tu auto?</h1>
                     <p>Ven a tu nuevo taller mecanico de confianza...</p><br>
-                    <h2>Te ofrecemos:</h2>
-                    <img src="./assets/pictures/services.png"><br>
-                    <h2>¡Y mucho más, al mejor precio!</h2>
+                    <img src="./assets/img/logo.png"><br>
+                    <h2 >¡El mejor servicio, al mejor precio!</h2>
                 </div>
             </section>
         </div>
-        <!-- <div id="sw"></div> -->
-        <section class="about-us">
-
-            <div class="decrypt" id="aboutus">
-                <h1>Sobre nosotros...</h1>
+        <div class="about-us" id="about-us-startline">
+            <section class="decrypt" id="aboutus">
+                <h1>Sobre nosotros...</h1><br>
                 <p>Somos una empresa con personal altamente capacitado, con amplia experiencia
                     en sistemas mecanicos automotrices. Ofrecemos un servicio personalizado para
-                    cada cliente.</p><br>
-
-                <p>Damos garantia por escrito ya que nuestro servicio se centra en la calidad.</p><br>
+                    cada cliente.</p>
+                <p>Damos garantia por escrito ya que nuestro servicio se centra en la calidad.</p>
                 <p>Ten por seguro que nos encargaremos de resolver con esmero cada problema que
                     tengas con respecto a la mecanica de tu vehiculo.</p>
-            </div>
-        </section>
-        <!-- <div id="linea"></div> -->
-        <section id="promos">
+            </section>
 
+        <section id="promos">
             <div id="carrusel-contenido">
                 <h1>Fotos / Promociones</h1>
                 <div id="carrusel-caja">
@@ -96,11 +77,10 @@
                     </div>
                 </div>
             </div>
-
         </section>
+    
         <div class="blog-catalogo">
-            <hr>
-            <table style="width: 322px;">
+            <table style="width: 100%;">
                 <tbody>
                     <tr style="height: 34px;">
                         <td style="width: 242px; height: 34px;">
@@ -153,6 +133,7 @@
             </table>
             <h2>Acércate y pregunta por nuestros servicios</h2>
         </div>
+    </div>
         <section id="maps">
             <div id="sw2"></div>
             <div id="SN-fb">
@@ -172,8 +153,6 @@
             <iframe
                 id="gmap"
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1866.1350715514934!2d-100.43644!3d20.699252!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x83013b379a04564!2sTaller%20Multiservicios%20DIPRO!5e0!3m2!1ses!2smx!4v1674591129530!5m2!1ses!2smx"
-                width="250"
-                height="250"
                 style="border:0;"
                 allowfullscreen=""
                 loading="lazy"
