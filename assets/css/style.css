@@ -60,21 +60,6 @@ nav ul li:hover {
 }
 
 /* Fin de barra de navegación */
-
-
-.content {
-    padding-top: 80px;
-    overflow: hidden;
-    color: #fff;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../pictures/mechanic-hand-checking-and-fixing-broken-car-in-car-service-garage.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    height: 100vh;
-    position: relative;
-}
-
-
 /* Separadores y separadores animados */
 .wave {
     width: 100%;
@@ -151,7 +136,8 @@ nav ul li:hover {
 .jumbotron {
     padding-top: 4px;
     display: flex;
-    justify-content: space-between;
+    gap: 50px;
+    justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
 }
@@ -400,7 +386,23 @@ input::-webkit-input-placeholder {
     height: 33px;
 }
 
-@media screen and (max-width: 1000px) {
+.main_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    overflow: hidden;
+    color: #fff;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../pictures/mechanic-hand-checking-and-fixing-broken-car-in-car-service-garage.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    padding-inline: 10px;
+}
+
+@media screen and (mx-width: 1000px) {
     header {
         background: rgba(0,0,0,0.9);
         width: 100%;
@@ -409,8 +411,11 @@ input::-webkit-input-placeholder {
         z-index: 100;
     }
 
-    .content {
-        padding-top: 150px;
+    .main_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
         overflow: hidden;
         color: #fff;
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../pictures/mechanic-hand-checking-and-fixing-broken-car-in-car-service-garage.jpg");
@@ -419,6 +424,7 @@ input::-webkit-input-placeholder {
         background-position: center;
         height: 100vh;
         position: relative;
+        padding-inline: 10px;
     }
 
 
@@ -498,7 +504,8 @@ input::-webkit-input-placeholder {
     .jumbotron {
         padding-top: 4px;
         display: flex;
-        justify-content: space-between;
+        gap: 50px;
+        justify-content: space-evenly;
         flex-direction: column;
         align-items: center;
     }
@@ -748,7 +755,7 @@ input::-webkit-input-placeholder {
     }
     }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 520px) {
     header {
         background: rgba(0,0,0,0.9);
         width: 100%;
@@ -757,17 +764,20 @@ input::-webkit-input-placeholder {
         z-index: 100;
     }
 
-    .content {
-        padding-top: 150px;
+    .main_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
         overflow: hidden;
         color: #fff;
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../pictures/mechanic-hand-checking-and-fixing-broken-car-in-car-service-garage.jpg");
         background-size: cover;
         background-attachment: fixed;
         background-position: center;
-        height: 110vh;
+        height: 100vh;
         position: relative;
-        bottom: 38px;
+        padding-inline: 10px;
     }
 
     /* Separadores y separadores animados */
@@ -784,6 +794,7 @@ input::-webkit-input-placeholder {
 
     #sw {
         position: relative;
+        z-index: 98;
         background-image: url("../img/simplewave.png");
         width: 100%;
         height: 100px;
@@ -853,7 +864,8 @@ input::-webkit-input-placeholder {
     .jumbotron {
         padding-top: 4px;
         display: flex;
-        justify-content: space-between;
+        gap: 50px;
+        justify-content: space-evenly;
         flex-direction: column;
         align-items: center;
     }
