@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.747), rgba(136, 57, 4, 0.753)), url("../img/afinacion-servicio.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.card ul li {
+    list-style: initial;
+    text-align: justify;
+}
+
+#price {
+    text-align: center;
+    color: #ff0000;
+    font-size: 30px;
+}
+
+#titles {
+    text-align: center;
+}
+.principal {
+    padding: 100px 10px 0;
+    color: #fff;
+}
+.cards-containers {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.card {
+    background-color: #fff;
+    border-radius: 15px;
+    opacity: 0.9;
+    color: #000;
+    padding: 5px;
+    width: 500px;
+}
+
+#teaser {
+    font-size: 25px;
+    padding-top: 25px;
+    text-align: center;
+    color: transparent;
+    background-image: linear-gradient(to left, #FFD700, #ffffff, #3498db, #2ecc71, #FFD700);
+    background-clip: text;-webkit-background-clip: text;color: transparent;
+    background-size: 500%;
+    animation: color 3s linear infinite;
+}
+@keyframes color {
+    from {
+        background-position: 0% 50%;
+    }
+
+    to {
+        background-position: 100% 50%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .principal {
+        padding: 100px 10px 0;
+        color: #fff;
+    }
+    .cards-containers {
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: space-evenly;
+    }
+    .card {
+        background-color: #fff;
+        border-radius: 15px;
+        opacity: 0.9;
+        color: #000;
+        padding: 5px;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .principal {
+        padding: 100px 10px 0;
+        color: #fff;
+    }
+    .cards-containers {
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: space-evenly;
+    }
+    .card {
+        background-color: #fff;
+        border-radius: 15px;
+        opacity: 0.9;
+        color: #000;
+        padding: 5px;
+        width: 300px;
+    }
+
+}

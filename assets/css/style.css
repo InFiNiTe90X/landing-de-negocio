@@ -402,7 +402,7 @@ input::-webkit-input-placeholder {
     padding-inline: 10px;
 }
 
-@media screen and (mx-width: 1000px) {
+@media screen and (max-width: 1000px) {
     header {
         background: rgba(0,0,0,0.9);
         width: 100%;
@@ -763,7 +763,6 @@ input::-webkit-input-placeholder {
         position: fixed;
         z-index: 100;
     }
-
     .main_container {
         display: flex;
         justify-content: center;
