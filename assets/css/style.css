@@ -35,7 +35,7 @@ nav {
 }
 
 nav ul {
-    padding: 0px;
+    padding: 0;
     list-style: none;
     overflow: hidden;
     /* Limpiamos errores de float */
@@ -148,8 +148,8 @@ nav ul li:hover {
 }
 
 .about-us {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     padding-top: 90px;
     align-items: center;
     text-align: justify;
@@ -159,7 +159,8 @@ nav ul li:hover {
 }
 
 .decrypt {
-    padding: 10px;
+    padding: 150px;
+    height: 100vh;
 }
 
 #promos {
@@ -189,7 +190,7 @@ nav ul li:hover {
     color: azure;
 }
 
-#gmap{
+#gmap {
     width: 450px;
     height: 450px;
 }
@@ -198,7 +199,7 @@ nav ul li:hover {
     width: 100px;
 }
 
-#carrusel-caja {
+/* #carrusel-caja {
     -moz-animation: automatizacion 15s infinite linear;
     -o-animation: automatizacion 15s infinite linear;
     -webkit-animation: automatizacion 15s infinite linear;
@@ -210,23 +211,23 @@ nav ul li:hover {
     transition: all 0.75s ease;
     height: 300px;
     width: 300%;
-}
+} */
 
-#carrusel-contenido {
+/* #carrusel-contenido {
     padding-top: 90px;
     margin: 0 auto;
     overflow: hidden;
     text-align: center;
-}
+} */
 .imagenes {
-    height: 80%;
     width: 80%;
 }
+/*
 .carrusel-elemento {
     float: left;
     width: 33.333%;
-}
-@-moz-keyframes automatizacion {
+} */
+/* @-moz-keyframes automatizacion {
     0% {
         margin-left: 0;
     }
@@ -294,7 +295,7 @@ nav ul li:hover {
     100% {
         margin-left: 0;
     }
-}
+} */
 
 #cotiza {
     color: #000;
@@ -427,7 +428,6 @@ input::-webkit-input-placeholder {
         padding-inline: 10px;
     }
 
-
     /* Separadores y separadores animados */
     .wave {
         width: 100%;
@@ -527,7 +527,8 @@ input::-webkit-input-placeholder {
     }
 
     .decrypt {
-        padding: 10px;
+        padding: 150px;
+        height: 100vh;
     }
 
     #promos {
@@ -557,7 +558,7 @@ input::-webkit-input-placeholder {
         color: azure;
     }
 
-    #gmap{
+    #gmap {
         width: 450px;
         height: 450px;
     }
@@ -566,7 +567,7 @@ input::-webkit-input-placeholder {
         width: 100px;
     }
 
-    #carrusel-caja {
+    /*     #carrusel-caja {
         -moz-animation: automatizacion 15s infinite linear;
         -o-animation: automatizacion 15s infinite linear;
         -webkit-animation: automatizacion 15s infinite linear;
@@ -578,23 +579,23 @@ input::-webkit-input-placeholder {
         transition: all 0.75s ease;
         height: 300px;
         width: 300%;
-    }
-
+    } */
+    /*
     #carrusel-contenido {
         padding-top: 90px;
         margin: 0 auto;
         overflow: hidden;
         text-align: center;
-    }
+    } */
     .imagenes {
-        height: 70%;
-        width: 70%;
+        width: 80%;
     }
+    /*
     .carrusel-elemento {
         float: left;
         width: 33.333%;
-    }
-    @-moz-keyframes automatizacion {
+    } */
+    /*     @-moz-keyframes automatizacion {
         0% {
             margin-left: 0;
         }
@@ -662,7 +663,7 @@ input::-webkit-input-placeholder {
         100% {
             margin-left: 0;
         }
-    }
+    } */
 
     #cotiza {
         color: #000;
@@ -753,7 +754,7 @@ input::-webkit-input-placeholder {
         width: 33px;
         height: 33px;
     }
-    }
+}
 
 @media screen and (max-width: 520px) {
     header {
@@ -859,7 +860,6 @@ input::-webkit-input-placeholder {
         z-index: 3;
     }
 
-
     .jumbotron {
         padding-top: 4px;
         display: flex;
@@ -875,8 +875,8 @@ input::-webkit-input-placeholder {
     }
 
     .about-us {
-        display: grid;
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
         padding-top: 90px;
         align-items: center;
         text-align: justify;
@@ -886,7 +886,8 @@ input::-webkit-input-placeholder {
     }
 
     .decrypt {
-        padding: 10px;
+        padding: 25px;
+        height: 130vh;
     }
 
     #promos {
@@ -921,11 +922,11 @@ input::-webkit-input-placeholder {
         width: 50px;
     }
 
-    #gmap{
+    #gmap {
         width: 250px;
         height: 250px;
     }
-
+    /* 
     #carrusel-caja {
         -moz-animation: automatizacion 15s infinite linear;
         -o-animation: automatizacion 15s infinite linear;
@@ -945,11 +946,12 @@ input::-webkit-input-placeholder {
         margin: 0 auto;
         overflow: hidden;
         text-align: center;
-    }
+    }*/
     .imagenes {
-        height: 100%;
-        width: 100%;
+        width: 80%;
     }
+
+    /*
     .carrusel-elemento {
         float: left;
         width: 33.333%;
@@ -1022,7 +1024,7 @@ input::-webkit-input-placeholder {
         100% {
             margin-left: 0;
         }
-    }
+    } */
 
     #cotiza {
         color: #000;
