@@ -5,6 +5,58 @@
     list-style: none;
 }
 
+/* Estilos generales de los carruseles */
+.carousel-container {
+    position: relative;
+    width: 350px; /* Ancho del carrusel */
+    height: 350px; /* Alto del carrusel */
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .carousel-slide {
+    white-space: nowrap;
+    font-size: 0; /* Eliminamos el espacio entre las imágenes */
+    transition: transform 0.3s ease-in-out;
+    height: 100%; /* Ajustamos la altura del carrusel */
+  }
+  
+  .carousel-slide img {
+    display: inline-block;
+    width: 100%; /* Ajustamos el ancho de las imágenes al 100% */
+    height: 100%; /* Ajustamos la altura de las imágenes al 100% */
+    object-fit: contain; /* Ajustamos el tamaño de la imagen */
+  }
+  
+  /* Estilos para los botones prev y next */
+  .prevBtn,
+  .nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: #e74c3c;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .prevBtn {
+    left: 10px;
+  }
+  
+  .nextBtn {
+    right: 10px;
+  }
+    
+  
 body {
     font-family: Montserrat, sans-serif;
     font-size: 16px;
@@ -165,6 +217,8 @@ nav ul li:hover {
 
 #promos {
     display: flex;
+    flex-direction: column;
+    gap: 10px;
     justify-content: space-between;
     align-items: center;
     text-align: center;
@@ -198,104 +252,6 @@ nav ul li:hover {
 #maps img {
     width: 100px;
 }
-
-/* #carrusel-caja {
-    -moz-animation: automatizacion 15s infinite linear;
-    -o-animation: automatizacion 15s infinite linear;
-    -webkit-animation: automatizacion 15s infinite linear;
-    animation: automatizacion 15s infinite linear;
-    -webkit-transition: all 0.75s ease;
-    -moz-transition: all 0.75s ease;
-    -ms-transition: all 0.75s ease;
-    -o-transition: all 0.75s ease;
-    transition: all 0.75s ease;
-    height: 300px;
-    width: 300%;
-} */
-
-/* #carrusel-contenido {
-    padding-top: 90px;
-    margin: 0 auto;
-    overflow: hidden;
-    text-align: center;
-} */
-.imagenes {
-    width: 80%;
-}
-/*
-.carrusel-elemento {
-    float: left;
-    width: 33.333%;
-} */
-/* @-moz-keyframes automatizacion {
-    0% {
-        margin-left: 0;
-    }
-    30% {
-        margin-left: 0;
-    }
-    35% {
-        margin-left: -100%;
-    }
-    65% {
-        margin-left: -100%;
-    }
-    70% {
-        margin-left: -200%;
-    }
-    95% {
-        margin-left: -200%;
-    }
-    100% {
-        margin-left: 0;
-    }
-}
-@-webkit-keyframes automatizacion {
-    0% {
-        margin-left: 0;
-    }
-    30% {
-        margin-left: 0;
-    }
-    35% {
-        margin-left: -100%;
-    }
-    65% {
-        margin-left: -100%;
-    }
-    70% {
-        margin-left: -200%;
-    }
-    95% {
-        margin-left: -200%;
-    }
-    100% {
-        margin-left: 0;
-    }
-}
-@keyframes automatizacion {
-    0% {
-        margin-left: 0;
-    }
-    30% {
-        margin-left: 0;
-    }
-    35% {
-        margin-left: -100%;
-    }
-    65% {
-        margin-left: -100%;
-    }
-    70% {
-        margin-left: -200%;
-    }
-    95% {
-        margin-left: -200%;
-    }
-    100% {
-        margin-left: 0;
-    }
-} */
 
 #cotiza {
     color: #000;
