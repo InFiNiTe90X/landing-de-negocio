@@ -87,54 +87,77 @@
                 <p>Somos tu taller mecánico en Querétaro de confianza, brindandote el mejor
                     precio y la mas alta calidad que te mereces.</p>
             </section>
+            <div>
+                <h2>Promociones del mes</h2>
+            </div>
+            <div class="pmes">
+                <a
+                    onclick="openPopup('./assets/img/promo(1).jpg')">
+                    <img src="./assets/img/promo(1).jpg" alt="Imagen 1">
+                </a>
+                <a
+                    onclick="openPopup('./assets/img/promo(2).jpg')">
+                    <img src="./assets/img/promo(2).jpg" alt="Imagen 2">
+                </a>
+            </div>
+            <!-- Plantilla de ventana emergente -->
+            <div id="popup" class="popup">
+                <span class="closeBtn" onclick="closePopup()">&times;</span>
+                <img id="popupImage" src="" alt="Imagen">
+            </div>
+            <script src="popup.js"></script>
             <section id="promos">
-                <div><h2>Nuestros trabajos en gasolina</h2></div>
-  <!-- Primer carrusel -->
-  <div class="carousel-container">
-    <div class="carousel-slide">
-      <img src="./assets/pictures/pic1.jpeg" alt="Imagen 1">
-      <img src="./assets/pictures/pic2.jpeg" alt="Imagen 2">
-      <img src="./assets/pictures/pic3.jpeg" alt="Imagen 3">
-      <img src="./assets/pictures/gasolina1.jpg" alt="Imagen 4">
-      <img src="./assets/pictures/gasolina2.jpg" alt="Imagen 5">
-      <img src="./assets/pictures/gasolina3.jpg" alt="Imagen 6">
-      <img src="./assets/pictures/gasolina4.jpg" alt="Imagen 7">
-      <img src="./assets/pictures/gasolina5.jpg" alt="Imagen 8">
-      <img src="./assets/pictures/gasolina7.jpg" alt="Imagen 9">
-      <img src="./assets/pictures/gasolina8.jpg" alt="Imagen 10">
-      <img src="./assets/pictures/gasolina9.jpg" alt="Imagen 11">
-      <img src="./assets/pictures/gasolina10.jpg" alt="Imagen 12">
-      <img src="./assets/pictures/gasolina11.jpg" alt="Imagen 13">
-      <img src="./assets/pictures/gasolina13.jpg" alt="Imagen 14">
-      <img src="./assets/pictures/gasolina14.jpg" alt="Imagen 15">
-      <img src="./assets/pictures/gasolina15.jpg" alt="Imagen 16">
-      <img src="./assets/pictures/gasolina16.jpg" alt="Imagen 17">
-      
-      <!-- Agrega más imágenes aquí -->
-    </div>
-    <button class="prevBtn">Prev</button>
-    <button class="nextBtn">Next</button>
-  </div>
+                <div>
+                    <h2>Nuestros trabajos en gasolina</h2>
+                </div>
+                <!-- Primer carrusel -->
+                <div class="carousel-container">
+                    <div class="carousel-slide">
+                        <img src="./assets/pictures/pic1.jpeg" alt="Imagen 1">
+                        <img src="./assets/pictures/pic2.jpeg" alt="Imagen 2">
+                        <img src="./assets/pictures/pic3.jpeg" alt="Imagen 3">
+                        <img src="./assets/pictures/gasolina1.jpg" alt="Imagen 4">
+                        <img src="./assets/pictures/gasolina2.jpg" alt="Imagen 5">
+                        <img src="./assets/pictures/gasolina3.jpg" alt="Imagen 6">
+                        <img src="./assets/pictures/gasolina4.jpg" alt="Imagen 7">
+                        <img src="./assets/pictures/gasolina5.jpg" alt="Imagen 8">
+                        <img src="./assets/pictures/gasolina7.jpg" alt="Imagen 9">
+                        <img src="./assets/pictures/gasolina8.jpg" alt="Imagen 10">
+                        <img src="./assets/pictures/gasolina9.jpg" alt="Imagen 11">
+                        <img src="./assets/pictures/gasolina10.jpg" alt="Imagen 12">
+                        <img src="./assets/pictures/gasolina11.jpg" alt="Imagen 13">
+                        <img src="./assets/pictures/gasolina13.jpg" alt="Imagen 14">
+                        <img src="./assets/pictures/gasolina14.jpg" alt="Imagen 15">
+                        <img src="./assets/pictures/gasolina15.jpg" alt="Imagen 16">
+                        <img src="./assets/pictures/gasolina16.jpg" alt="Imagen 17">
 
-  <!-- Segundo carrusel -->
-  <div><h2>Nuestros trabajos en Diesel</h2></div>
-  <div class="carousel-container">
-    <div class="carousel-slide">
-      <img src="./assets/pictures/IMG-20230729-WA0040.jpg" alt="Imagen 4">
-      <img src="./assets/pictures/IMG-20230729-WA0041.jpg" alt="Imagen 5">
-      <img src="./assets/pictures/IMG-20230729-WA0042.jpg" alt="Imagen 6">
-      <img src="./assets/pictures/IMG-20230729-WA0043.jpg" alt="Imagen 6">
-      <img src="./assets/pictures/IMG-20230729-WA0044.jpg" alt="Imagen 6">
-      <img src="./assets/pictures/IMG-20230729-WA0045.jpg" alt="Imagen 6">
-      <img src="./assets/pictures/IMG-20230729-WA0046.jpg" alt="Imagen 6">
-      <img src="./assets/pictures/IMG-20230729-WA0047.jpg" alt="Imagen 6">
-      <!-- Agrega más imágenes aquí -->
-    </div>
-    <button class="prevBtn">Prev</button>
-    <button class="nextBtn">Next</button>
-  </div>
+                        <!-- Agrega más imágenes aquí -->
+                    </div>
+                    <button class="prevBtn">Prev</button>
+                    <button class="nextBtn">Next</button>
+                </div>
 
-  <script src="script.js"></script>
+                <!-- Segundo carrusel -->
+                <div>
+                    <h2>Nuestros trabajos en Diesel</h2>
+                </div>
+                <div class="carousel-container">
+                    <div class="carousel-slide">
+                        <img src="./assets/pictures/IMG-20230729-WA0040.jpg" alt="Imagen 4">
+                        <img src="./assets/pictures/IMG-20230729-WA0041.jpg" alt="Imagen 5">
+                        <img src="./assets/pictures/IMG-20230729-WA0042.jpg" alt="Imagen 6">
+                        <img src="./assets/pictures/IMG-20230729-WA0043.jpg" alt="Imagen 6">
+                        <img src="./assets/pictures/IMG-20230729-WA0044.jpg" alt="Imagen 6">
+                        <img src="./assets/pictures/IMG-20230729-WA0045.jpg" alt="Imagen 6">
+                        <img src="./assets/pictures/IMG-20230729-WA0046.jpg" alt="Imagen 6">
+                        <img src="./assets/pictures/IMG-20230729-WA0047.jpg" alt="Imagen 6">
+                        <!-- Agrega más imágenes aquí -->
+                    </div>
+                    <button class="prevBtn">Prev</button>
+                    <button class="nextBtn">Next</button>
+                </div>
+
+                <script src="script.js"></script>
             </section>
         </div>
         <div class="blog-catalogo">
