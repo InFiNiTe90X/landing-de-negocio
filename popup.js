@@ -1,5 +1,5 @@
 function openPopup(url) {
-  if (window.innerWidth > 375) {
+  if (window.innerWidth > 500) {
     const popup = document.getElementById('popup');
     const popupImage = document.getElementById('popupImage');
     popupImage.src = url;
